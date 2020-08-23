@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Symbolab Pro",
+  "version": "0.1.0",
+  "description": "Extension that unlocks the pro features in Symbolab",
+  
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["*://*.symbolab.com/*"],
+      "js": ["extension.js"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "resources/icon.png",
+    "default_title": "Symbolab"
+  },
+  "icons": { 
+    "16": "resources/app_icon.png",
+    "48": "resources/app_icon.png",
+    "128": "resources/app_icon.png"
+  }
+}
